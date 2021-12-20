@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Adivinador</title>
+</head>
+
+<body>
+    <div class="card">
+        <h1>¡Adivina un numero!</h1>
+        <div class="card-in">
+            <label>Digite su opcion:</label>
+            <input type="number" id="field_adivina" placeholder="Número">
+            <h3 id="intentos">Intentos: </h3>
+        </div>
+        <div class="card-in-column">
+            <button class="btn_v" id="btn_v" onclick="validar()">Verificar</button>
+            <h4 id="guia">Guia</h4>
+            <button class="btn_r" id="btn_r" onclick="reiniciar()">Reiniciar</button>
+        </div>
+        <div>
+            <h3>Números Registrados:</h3>
+            <article class="article">
+                <ul id="guia_valores"></ul>
+            </article>
+        </div>
+    </div>
+</body>
+<script src="./js/operaciones.js"></script>
+
+</html>
